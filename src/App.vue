@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view/>
+    <main-tar-bar/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainTarBar from 'components/content/MainTarBar'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainTarBar
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+@import "assets/css/base.css";
+
+.tar-bar-item img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
 }
+
 </style>
